@@ -6,6 +6,27 @@
 }
 
 @layer base {
+    body {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        row-gap: 3rem;
+        @apply max-sm:px-4 sm:px-12 py-12;
+    }
+
+
+    .navbar {
+        @media screen and (max-width: 40rem) {
+            display: none;
+        }
+    }
+    .menu-icon {
+        @media screen and (min-width: 40rem) {
+            display: none;
+        }
+    }
+
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 }
