@@ -2,28 +2,69 @@
 
 
 @theme base {
+    /*Colors*/
 
+    /*Primary*/
+    --color-softOrange: hsl(35, 77%, 62%);
+    --color-softRed: hsl(5, 85%, 63%);
+
+    /*Neutral*/
+    --color-offWhite: hsl(36, 100%, 99%);
+    --color-grayishBlue: hsl(233, 8%, 79%);
+    --color-darkGrayishBlue: hsl(236, 13%, 42%);
+    --color-veryDarkBlue: hsl(240, 100%, 5%);
+
+    /*Typography*/
+
+    /*Body Copy*/
+    --font-interParagraph: Inter, sans-serif;
+
+    /*Font*/
+    /*Weights: 400, 700, 800*/
 }
 
 @layer base {
     body {
+        @apply font-interParagraph max-sm:px-4 sm:px-12 py-12;
         min-height: 100vh;
         display: grid;
         place-content: center;
         row-gap: 3rem;
-        @apply max-sm:px-4 sm:px-12 py-12;
     }
-
-
+    main {
+        grid-template-rows: 1.8fr 1fr 1fr;
+    }
+    section h3 {
+        font-size: medium;
+        font-weight: 700;
+    }
+    section p {
+        font-size: small;
+        @apply text-darkGrayishBlue;
+    }
     .navbar {
         @media screen and (max-width: 40rem) {
             display: none;
+            width: 60vw;
+            height: 100vh;
+            position: absolute;
+            right: -5%;
+            padding: 25% 2rem;
+            background-color: white;
         }
     }
     .menu-icon {
         @media screen and (min-width: 40rem) {
             display: none;
         }
+    }
+    .w-image {
+        width: 30%;
+        height: 100%;
+    }
+
+    .bg-displayed {
+        display: inline-block !important;
     }
 
 

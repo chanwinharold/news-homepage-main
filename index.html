@@ -17,84 +17,82 @@
 </head>
 <body>
 
-<header class="flex justify-between">
+<header class="flex justify-between relative">
     <img class="w-fit" src="assets/images/logo.svg" alt="Logo W.">
 
-    <nav class="navbar">
-        <ul class="flex sm:gap-8">
-            <li class=""><a href="#">Home</a></li>
-            <li class=""><a href="#">New</a></li>
-            <li class=""><a href="#">Popular</a></li>
-            <li class=""><a href="#">Trending</a></li>
-            <li class=""><a href="#">Categories</a></li>
+    <nav id="menu" class="navbar" role="menubar">
+        <ul class="flex max-sm:flex-col gap-8">
+            <li><a class="hover:text-softRed" href="#">Home</a></li>
+            <li><a class="hover:text-softRed" href="#">New</a></li>
+            <li><a class="hover:text-softRed" href="#">Popular</a></li>
+            <li><a class="hover:text-softRed" href="#">Trending</a></li>
+            <li><a class="hover:text-softRed" href="#">Categories</a></li>
         </ul>
     </nav>
-    <img class="menu-icon" src="assets/images/icon-menu.svg" alt="menu">
+    <img class="menu-icon w-fit z-10" src="assets/images/icon-menu.svg" alt="menu" aria-controls="menu">
 </header>
 
-<main class="">
-    <section class="">
+<main class="max-sm:flex max-sm:flex-col sm:grid grid-cols-3 gap-6">
+    <section class="max-sm:min-h-56 col-[1/3] row-1 max-sm:bg-[url('/assets/images/image-web-3-mobile.jpg')] sm:bg-[url('/assets/images/image-web-3-desktop.jpg')] bg-no-repeat bg-cover bg-center">
         <!--  image here -->
     </section>
 
-    <section class="">
-        <h1 class="">The Bright Future of Web 3.0?</h1>
+    <section class="col-1 row-2">
+        <h1 class="max-sm:text-5xl max-md:text-4xl md:text-5xl font-extrabold">The Bright Future of Web 3.0?</h1>
     </section>
 
-    <section>
-        <p class="">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+    <section class="max-sm:min-h-35 col-2 row-2 flex flex-col justify-between">
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
             But is it really fulfilling its promise?</p>
-        <a class="" href="#">Read more</a>
+        <a class="w-fit text-sm uppercase font-semibold px-6 py-2 bg-softRed hover:bg-veryDarkBlue hover:text-white" href="#">Read more</a>
     </section>
 
-    <section class="">
-        <header class="">
-            <h2 class="">New</h2>
+    <section class="col-3 row-[1/3] px-4 max-sm:min-h-112.5 bg-veryDarkBlue flex flex-col justify-evenly">
+        <header>
+            <h2 class="text-3xl text-softOrange font-bold">New</h2>
         </header>
 
-        <article class="">
-            <h3 class="">Hydrogen VS Electric Cars</h3>
-            <p class="">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <article class="pb-8 border-b-1 border-b-darkGrayishBlue flex flex-col gap-2">
+            <h3 class="text-white hover:text-softOrange">Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
         </article>
 
-        <article class="">
-            <h3 class="">The Downsides of AI Artistry</h3>
-            <p class="">What are the possible adverse effects of on-demand AI image generation?</p>
+        <article class="pb-8 border-b-1 border-b-darkGrayishBlue flex flex-col gap-2">
+            <h3 class="text-white hover:text-softOrange">The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
         </article>
 
-        <article class="">
-            <h3 class="">Is VC Funding Drying Up?</h3>
-            <p class="">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        <article class="flex flex-col gap-2">
+            <h3 class="text-white hover:text-softOrange">Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </article>
 
     </section>
 
-    <section class="">
-        <img class="" src="assets/images/image-retro-pcs.jpg" alt="">
-        <article class="">
-            <span class="">01</span>
-            <h3 class="">Reviving Retro PCs</h3>
-            <p class="">What happens when old PCs are given modern upgrades?</p>
+    <section class="col-1 row-3 flex gap-4">
+        <img class="w-image" src="assets/images/image-retro-pcs.jpg" alt="">
+        <article class="flex flex-col gap-1.5">
+            <span class="text-2xl text-softRed font-bold">01</span>
+            <h3 class="hover:text-softRed">Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
         </article>
     </section>
 
-    <section class="">
-        <img class="" src="assets/images/image-top-laptops.jpg" alt="">
-        <article class="">
-            <span class="">02</span>
-            <h3 class="">Top 10 Laptops of 2022</h3>
-            <p class="">Our best picks for various needs and budgets.</p>
+    <section class="col-2 row-3 flex gap-4">
+        <img class="w-image" src="assets/images/image-top-laptops.jpg" alt="">
+        <article class="flex flex-col gap-1.5">
+            <span class="text-2xl text-softRed font-bold">02</span>
+            <h3 class="hover:text-softRed">Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
         </article>
     </section>
 
-
-
-    <section class="">
-        <img class="" src="assets/images/image-gaming-growth.jpg" alt="">
-        <article class="">
-            <span class="">03</span>
-            <h3 class="">The Growth of Gaming</h3>
-            <p class="">How the pandemic has sparked fresh opportunities.</p>
+    <section class="col-3 row-3 flex gap-4">
+        <img class="w-image" src="assets/images/image-gaming-growth.jpg" alt="">
+        <article class="flex flex-col gap-1.5">
+            <span class="text-2xl text-softRed font-bold">03</span>
+            <h3 class="hover:text-softRed">The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
         </article>
     </section>
 
