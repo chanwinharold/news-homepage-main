@@ -16,7 +16,7 @@
 
 </head>
 <body>
-
+<div class="backdrop hidden" id="backdrop"></div>
 <header class="flex justify-between relative">
     <img class="w-fit" src="assets/images/logo.svg" alt="Logo W.">
 
@@ -29,11 +29,11 @@
             <li><a class="hover:text-softRed" href="#">Categories</a></li>
         </ul>
     </nav>
-    <img class="menu-icon w-fit z-10" src="assets/images/icon-menu.svg" alt="menu" aria-controls="menu">
+    <img class="menu-icon w-fit right-[5%] z-20" src="assets/images/icon-menu.svg" alt="menu" aria-controls="menu">
 </header>
 
-<main class="max-sm:flex max-sm:flex-col sm:grid grid-cols-3 gap-6">
-    <section class="max-sm:min-h-56 col-[1/3] row-1 max-sm:bg-[url('/assets/images/image-web-3-mobile.jpg')] sm:bg-[url('/assets/images/image-web-3-desktop.jpg')] bg-no-repeat bg-cover bg-center">
+<main class="max-md:flex max-md:flex-col md:grid max-md:gap-8 md:gap-6">
+    <section class="col-start-1 col-end-3 row-1 max-md:min-h-56 max-sm:bg-[url('/assets/images/image-web-3-mobile.jpg')] sm:bg-[url('/assets/images/image-web-3-desktop.jpg')] bg-no-repeat bg-cover bg-center">
         <!--  image here -->
     </section>
 
@@ -41,13 +41,13 @@
         <h1 class="max-sm:text-5xl max-md:text-4xl md:text-5xl font-extrabold">The Bright Future of Web 3.0?</h1>
     </section>
 
-    <section class="max-sm:min-h-35 col-2 row-2 flex flex-col justify-between">
+    <section class="col-2 row-2 flex flex-col justify-between gap-8">
         <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
             But is it really fulfilling its promise?</p>
-        <a class="w-fit text-sm uppercase font-semibold px-6 py-2 bg-softRed hover:bg-veryDarkBlue hover:text-white" href="#">Read more</a>
+        <a class="w-fit text-sm uppercase font-semibold px-8 py-4 bg-softRed hover:bg-veryDarkBlue hover:text-white" href="#">Read more</a>
     </section>
 
-    <section class="col-3 row-[1/3] px-4 max-sm:min-h-112.5 bg-veryDarkBlue flex flex-col justify-evenly">
+    <section class="col-3 row-start-1 row-end-3 px-4 py-8 max-sm:min-h-115 bg-veryDarkBlue flex flex-col justify-evenly gap-4">
         <header>
             <h2 class="text-3xl text-softOrange font-bold">New</h2>
         </header>
@@ -66,7 +66,6 @@
             <h3 class="text-white hover:text-softOrange">Is VC Funding Drying Up?</h3>
             <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </article>
-
     </section>
 
     <section class="col-1 row-3 flex gap-4">
@@ -95,7 +94,6 @@
             <p>How the pandemic has sparked fresh opportunities.</p>
         </article>
     </section>
-
 </main>
 
 <footer class="attribution">
